@@ -17,7 +17,13 @@ int main() {
 
     std::cout << "\n\t Quantity of items we have";
     std::cout << "\n Rooms available: ";
-
+    std::cin >> QuantRooms;
+    std::cout << "\n Quantity of pasta: ";
+    std::cin >> QuantPasta;
+    std::cout << "\n Quantity of burger: ";
+    std::cin >> QuantBurgers;
+    std::cout << "\n Quantity of noodles: ";
+    std::cin >> QuantNoodles;
 
     return 0;
 }
