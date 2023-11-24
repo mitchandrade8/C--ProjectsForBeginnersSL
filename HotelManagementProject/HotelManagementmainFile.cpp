@@ -24,6 +24,17 @@ int main() {
     std::cin >> QuantBurgers;
     std::cout << "\n Quantity of noodles: ";
     std::cin >> QuantNoodles;
+    std::cout << "\n Quantity of shakes: ";
+    std::cin >> QuantShakes;
+    std::cout << "\n Quantity of chicken-roll: ";
+    std::cin >> QuantChicken;
+
+    // MARK: - Creating a Menu 
+
+    std::cout << "\n\t\t\t Please select from the menu options ";
+    std::cout << "\n\n1) Rooms";
+    std::cout << "\n2) Pasta";
+    
 
     return 0;
 }
