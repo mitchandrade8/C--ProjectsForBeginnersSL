@@ -10,7 +10,7 @@ int main() {
     int QuantRooms = 0, QuantPasta = 0, QuantBurgers = 0, QuantNoodles = 0, QuantShakes = 0, QuantChicken = 0;
 
     // Sold Number of the items:
-    int SoldRooms = 0, SoldPasta = 0, SoldBurgers = 0, SoldShakes = 0, SoldChicken = 0;
+    int SoldRooms = 0, SoldPasta = 0, SoldBurgers = 0, SoldNoodles = 0, SoldShakes = 0, SoldChicken = 0;
 
     // Total price for items
     int Total_rooms = 0, Total_pasta = 0, Total_burger = 0, Total_noodles = 0, Total_shake = 0, Total_chicken = 0;
@@ -65,7 +65,7 @@ int main() {
             if (QuantPasta - SoldPasta >= quantity) {
                 SoldPasta = SoldPasta + quantity;
                 Total_pasta = Total_pasta + (quantity * 25);
-                std::cout << "\n\n\t\t" << quantity << "pasta/pastas have been purchased!";
+                std::cout << "\n\n\t\t" << quantity << "pasta/pastas have been ordered!";
             } else {
                 std::cout << "\n\tOnly" << QuantPasta - SoldPasta << "Pasta remaining in hotel ";
                 break;
@@ -76,23 +76,57 @@ int main() {
 
             std::cin >> quantity;
             if (QuantBurgers - SoldBurgers >= quantity) {
-
+                SoldBurgers = SoldBurgers + quantity;
+                Total_burger = Total_burger + (quantity * 40);
+                std::cout << "\n\n\t\t" << quantity << "burger/burgers have been ordered!";
             } else {
                 std::cout << "\n\tOnly" << QuantBurgers - SoldBurgers << "Burgers remaining in hotel ";
                 break;
             }
 
         case4:
+            std::cout << "\n\n Enter Noodle Quantity: ";
 
+            std::cin >> quantity;
+            if (QuantNoodles - SoldNoodles >= quantity) {
+                SoldNoodles = SoldNoodles + quantity;
+                Total_noodles = Total_noodles + (quantity * 22);
+                std::cout << "\n\n\t\t" << quantity << "noodle/noodles have been ordered!";
+            } else {
+                std::cout << "\n\tOnly" << QuantNoodles - SoldNoodles << "Noodles remaining in hotel ";
+                break;
+            }
 
         case5:
+            std::cout << "\n\n Enter Shake Quantity: ";
 
+            std::cin >> quantity;
+            if (QuantShakes - SoldShakes >= quantity) {
+                SoldShakes = SoldShakes + quantity;
+                Total_shake = Total_shake + (quantity * 40);
+                std::cout << "\n\n\t\t" << quantity << "shake/shakes have been ordered!";
+            } else {
+                std::cout << "\n\tOnly" << QuantShakes - SoldShakes << "Shakes remaining in hotel ";
+                break;
+            }
 
         case6:
+            std::cout << "\n\n Enter Chicken-roll Quantity: ";
 
-
+            std::cin >> quantity;
+            if (QuantChicken - SoldChicken >= quantity) {
+                SoldChicken = SoldChicken + quantity;
+                Total_chicken = Total_chicken + (quantity * 50);
+                std::cout << "\n\n\t\t" << quantity << "chicken-rolls have been ordered!";
+            } else {
+                std::cout << "\n\tOnly" << QuantChicken - SoldChicken << "Chicken-roll remaining in hotel ";
+                break;
+            }
+        
         case7:
+            
 
+        case8:
 
     }
 
