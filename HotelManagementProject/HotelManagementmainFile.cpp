@@ -59,14 +59,39 @@ int main() {
             }
             
         case2:
-            std::cout << "\n\n Enter the quantity of Pasta: ";
+            std::cout << "\n\n Enter Pasta Quantity: ";
 
             std::cin >> quantity;
             if (QuantPasta - SoldPasta >= quantity) {
                 SoldPasta = SoldPasta + quantity;
-                Total_pasta = Total_pasta + (quantity * 15);
-                
+                Total_pasta = Total_pasta + (quantity * 25);
+                std::cout << "\n\n\t\t" << quantity << "pasta/pastas have been purchased!";
+            } else {
+                std::cout << "\n\tOnly" << QuantPasta - SoldPasta << "Pasta remaining in hotel ";
+                break;
             }
+
+        case3:
+            std::cout << "\n\n Enter Burger Quantity: ";
+
+            std::cin >> quantity;
+            if (QuantBurgers - SoldBurgers >= quantity) {
+
+            } else {
+                std::cout << "\n\tOnly" << QuantBurgers - SoldBurgers << "Burgers remaining in hotel ";
+                break;
+            }
+
+        case4:
+
+
+        case5:
+
+
+        case6:
+
+
+        case7:
 
 
     }
