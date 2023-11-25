@@ -38,7 +38,27 @@ int main() {
     std::cout << "\n4) Noodles";
     std::cout << "\n5) Shake";
     std::cout << "\n6) Chicken-roll";
-    
+    std::cout << "\n7) Information regarding sales and collection ";
+    std::cout << "\n8) Exit";
+
+    std::cout << "\n\n Please Enter your choice! ";
+    std::cin >> choice;
+
+    switch (choice) {
+        case1:
+            std::cout << "\n\n Enter the number of rooms you want: ";
+
+            std::cin >> quantity;
+            if (QuantRooms-SoldRooms >= quantity) {
+                SoldRooms = SoldRooms + quantity;
+                Total_rooms = Total_rooms + (quantity * 1200);
+                std::cout << "\n\n\t\t" << quantity << "room/rooms have been alloted to you!";
+            } else {
+                
+            }
+            
+        case2:
+    }
 
     return 0;
 }
