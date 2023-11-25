@@ -34,6 +34,10 @@ int main() {
     std::cout << "\n\t\t\t Please select from the menu options ";
     std::cout << "\n\n1) Rooms";
     std::cout << "\n2) Pasta";
+    std::cout << "\n3) Burgers";
+    std::cout << "\n4) Noodles";
+    std::cout << "\n5) Shake";
+    std::cout << "\n6) Chicken-roll";
     
 
     return 0;
