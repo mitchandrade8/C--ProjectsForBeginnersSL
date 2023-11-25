@@ -49,15 +49,26 @@ int main() {
             std::cout << "\n\n Enter the number of rooms you want: ";
 
             std::cin >> quantity;
-            if (QuantRooms-SoldRooms >= quantity) {
+            if (QuantRooms - SoldRooms >= quantity) {
                 SoldRooms = SoldRooms + quantity;
                 Total_rooms = Total_rooms + (quantity * 1200);
                 std::cout << "\n\n\t\t" << quantity << "room/rooms have been alloted to you!";
             } else {
-                
+                std::cout << "\n\tOnly" << QuantRooms - SoldRooms << "Rooms remaining in hotel ";
+                break;
             }
             
         case2:
+            std::cout << "\n\n Enter the quantity of Pasta: ";
+
+            std::cin >> quantity;
+            if (QuantPasta - SoldPasta >= quantity) {
+                SoldPasta = SoldPasta + quantity;
+                Total_pasta = Total_pasta + (quantity * 15);
+                
+            }
+
+
     }
 
     return 0;
