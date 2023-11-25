@@ -124,7 +124,7 @@ int main() {
             }
         
         case7:
-            
+            std::cout << "\n\t\t Details of sales and collection ";
 
         case8:
 
